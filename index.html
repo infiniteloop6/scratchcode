@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Scratch编程小游戏</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background-color: #fef6e4;
+      color: #001858;
+      padding: 15px;
+    }
+    h1 { text-align: center; margin-bottom: 20px; }
+
+    .gif-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(300px, 1fr));
+      row-gap: 24px;
+      column-gap: 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .gif-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .gif-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .gif-card img {
+      display: block;
+      width: 100%;
+      height: 250px;
+    }
+
+    .gif-card .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 12px 16px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 1rem;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .gif-card:hover .overlay {
+      opacity: 1;
+    }
+
+    .gif-card a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Scratch小游戏合集</h1>
+
+  <div class="gif-grid">
+    <!-- 卡片 1 -->
+    <div class="gif-card">
+      <a href="https://scratch.stem86.com/player.html?t=1747580896853#b55f86f13eb94bf88a7bc61198b38f62"
+         target="_blank" rel="noopener">
+        <img src="gifs/01.gif" alt="游戏 1">
+        <div class="overlay">植物大战僵尸小游戏</div>
+      </a>
+    </div>
+    <!-- 卡片 2 -->
+    <div class="gif-card">
+      <a href="https://scratch.stem86.com/player.html?t=1747580969896#f36c2b7b0304468f8c545b927e062eed" target="_blank" rel="noopener">
+        <img src="gifs/02.gif" alt="游戏 2">
+        <div class="overlay">垃圾分类小游戏</div>
+      </a>
+    </div>
+    <!-- 卡片 3 -->
+    <div class="gif-card">
+      <a href="https://scratch.stem86.com/player.html?player=true#51197689e2434bb18affe967612f0b4c" target="_blank" rel="noopener">
+        <img src="gifs/03.gif" alt="游戏 3">
+        <div class="overlay">打地鼠</div>
+      </a>
+    </div>
+    <!-- 卡片 4 -->
+    <div class="gif-card">
+      <a href="https://scratch.stem86.com/player.html?player=true#efc83c4652104a05a5953c40c58fff82" target="_blank" rel="noopener">
+        <img src="gifs/04.gif" alt="游戏 4">
+        <div class="overlay">大鱼吃小鱼</div>
+      </a>
+    </div>
+    <!-- 卡片 5 -->
+    <div class="gif-card">
+      <a href="https://scratch.stem86.com/player.html?ticketused=aR3_-4oqi9dQtAynHB9XZYi089Z0mybKq40WNETTSSi3G3d78J7K6uEGl886x4dC&t=1747638205119&accountId=2#bec0406b814a48a9aff6341893fd9003" target="_blank" rel="noopener">
+        <img src="gifs/05.gif" alt="游戏 5">
+        <div class="overlay">飞翔的小鸟</div>
+      </a>
+    </div>
+    <!-- 卡片 6 -->
+    <div class="gif-card">
+      <a href="https://scratch.stem86.com/player.html?ticketused=aR3_-4oqi9dQtAynHB9XZYi089Z0mybKq40WNETTSShw1bfA9RegT-EGl886x4dC&t=1747638229674&accountId=2#6e40a3d84c374964baf121a1b458d033" target="_blank" rel="noopener">
+        <img src="gifs/06.gif" alt="游戏 6">
+        <div class="overlay">接苹果</div>
+      </a>
+    </div>
+    <!-- 卡片 7 -->
+    <div class="gif-card">
+      <a href="gifs/c1.html" target="_blank" rel="noopener">
+        <img src="gifs/07.gif" alt="游戏 7">
+        <div class="overlay">极速躲避</div>
+      </a>
+    </div>
+    <!-- 卡片 8 -->
+    <div class="gif-card">
+      <a href="https://scratch.stem86.com/player.html?ticketused=aR3_-4oqi9dQtAynHB9XZYi089Z0mybKwlMGkWioyJleyAArJsa_YuEGl886x4dC&t=1747650784993&accountId=2#1dfb5d474d9346a895c5cf6604a1a4a6" target="_blank" rel="noopener">
+        <img src="gifs/08.gif" alt="游戏 8">
+        <div class="overlay">色彩实验室</div>
+      </a>
+    </div>
+    <!-- 卡片 9 -->
+    <div class="gif-card">
+      <a href="https://scratch.stem86.com/player.html?ticketused=aR3_-4oqi9dQtAynHB9XZYi089Z0mybK2jgDZaP41B0vsGLVghRE1-EGl886x4dC&t=1747650561207&accountId=2#25e5c445a93d420184b3d3eb04c92509" target="_blank" rel="noopener">
+        <img src="gifs/09.gif" alt="游戏 9">
+        <div class="overlay">一起来种树</div>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
